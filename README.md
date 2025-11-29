@@ -112,7 +112,7 @@ npm run dev
 
 ## 作者
 
-**酷口**
+**酷口家数字花园**
 
 📧 邮件联系：musicleaf@qq.com  
 🌐 个人网站：[酷口家数字花园](https://weqoocu.com)  

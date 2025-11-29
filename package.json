@@ -16,7 +16,7 @@
     "picker",
     "date-picker"
   ],
-  "author": "酷口",
+  "author": "酷口家数字花园",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.11.6",
