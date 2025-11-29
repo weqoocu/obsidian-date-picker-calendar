@@ -112,7 +112,11 @@ npm run dev
 
 ## 作者
 
-**Wells Chen** - [GitHub](https://github.com/weqoocu)
+**wellschen**
+
+📧 邮件联系：musicleaf@qq.com  
+🌐 个人网站：[酷口家数字花园](https://weqoocu.com)  
+💻 GitHub：[weqoocu](https://github.com/weqoocu)
 
 ## 致谢
 

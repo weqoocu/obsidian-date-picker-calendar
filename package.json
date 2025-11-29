@@ -16,7 +16,7 @@
     "picker",
     "date-picker"
   ],
-  "author": "Wells Chen",
+  "author": "wellschen",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.11.6",
