@@ -1,0 +1,166 @@
+/* 日历弹窗容器 */
+.date-picker-calendar-popup {
+  position: fixed;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 1000;
+  width: 300px;
+  font-family: var(--font-interface);
+  display: flex;
+  gap: 8px;
+}
+
+/* 快捷日期选择 - 移到左侧 */
+.calendar-shortcuts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 60px;
+  border-right: 1px solid var(--background-modifier-border);
+  padding-right: 8px;
+}
+
+.calendar-shortcut-btn {
+  padding: 4px 8px;
+  font-size: 11px;
+  background: var(--background-secondary);
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--text-normal);
+  transition: all 0.2s;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.calendar-shortcut-btn:hover {
+  background: var(--background-modifier-hover);
+}
+
+.calendar-clear-btn {
+  color: var(--text-error);
+  margin-top: 4px;
+}
+
+.calendar-clear-btn:hover {
+  background: var(--background-modifier-error);
+}
+
+/* 日历主体 */
+.calendar-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 日历头部 */
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 0 2px;
+}
+
+.calendar-month-year {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-normal);
+  flex: 1;
+  text-align: center;
+}
+
+.calendar-nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.calendar-nav-btn:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+/* 星期标题 */
+.calendar-week-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  margin-bottom: 4px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 2px;
+}
+
+/* 日期网格 */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text-normal);
+  transition: all 0.2s;
+  position: relative;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.calendar-day:hover {
+  background: var(--background-modifier-hover);
+}
+
+.calendar-day-other-month {
+  color: var(--text-faint);
+  cursor: default;
+}
+
+.calendar-day-other-month:hover {
+  background: transparent;
+}
+
+.calendar-day-today {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  font-weight: 600;
+}
+
+.calendar-day-today:hover {
+  background: var(--interactive-accent-hover);
+}
+
+.calendar-day-selected {
+  background: var(--color-green);
+  color: white;
+  font-weight: 600;
+}
+
+.calendar-day-selected:hover {
+  background: var(--color-green);
+  opacity: 0.9;
+}
+
+/* 暗色主题优化 */
+.theme-dark .date-picker-calendar-popup {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}

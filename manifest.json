@@ -1,0 +1,9 @@
+{
+  "id": "date-picker-calendar",
+  "name": "Date Picker Calendar",
+  "version": "1.0.3",
+  "minAppVersion": "0.15.0",
+  "description": "A simple date picker calendar plugin that shows when hovering over date emoji (📅 YYYY-MM-DD) format.",
+  "author": "Wells Chen",
+  "isDesktopOnly": false
+}
